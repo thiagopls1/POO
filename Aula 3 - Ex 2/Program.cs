@@ -1,5 +1,4 @@
 ﻿using Aula3Ex2;
-int turno = 0;
 
 Status arqueiroStatus = new Status();
 arqueiroStatus.forca = 20;
@@ -31,8 +30,10 @@ Console.WriteLine($"Monstro");
 Console.WriteLine($"Nome: {monstro.nome}");
 Console.WriteLine($"Tipo: {monstro.tipo}\n");
 
-while(monstro.status.vida > 0 || heroi.status.vida > heroi.Ataca(monstro))
-monstro.Ataca(heroi);
+while (monstro.status.vida > 0 || heroi.status.vida > 0)
+{
+        heroi.Ataca(monstro);
+        monstro.Ataca(heroi);
 }
 
 if (monstro.status.vida <= 0)

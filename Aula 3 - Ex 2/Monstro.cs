@@ -19,12 +19,12 @@ namespace Aula3Ex2
 
             if(prob.Next(0,100) < this.status.sorte)
             {
-                heroi.status.vida -= ((this.status.forca * 2) - heroi.status.defesa);
+                heroi.status.vida = heroi.status.vida - ((this.status.forca * 2) - heroi.status.defesa);
                 Console.WriteLine($"{this.nome} deu um ataque crítico em {heroi.nome}, tirando {this.status.forca * 2 - heroi.status.defesa} de vida!");
             }
             else
             {
-                heroi.status.vida -= (this.status.forca - heroi.status.defesa);
+                heroi.status.vida = heroi.status.vida - (this.status.forca - heroi.status.defesa);
                 Console.WriteLine($"{this.nome} deu um ataque em {heroi.nome}, tirando {this.status.forca - heroi.status.defesa} de vida!");
             }
         }

@@ -17,12 +17,12 @@ namespace Aula3Ex2
             Random prob = new Random();
             if (prob.Next(0, 100) < this.status.sorte)
             {
-                monstro.status.vida -= ((this.status.forca * 2) - monstro.status.defesa);
+                monstro.status.vida = monstro.status.vida - ((this.status.forca * 2) - monstro.status.defesa);
                 Console.WriteLine($"{this.nome} deu um ataque crítico em {monstro.nome}, tirando {this.status.forca * 2 - monstro.status.defesa} de vida!");
             }
             else
             {
-                monstro.status.vida -= (this.status.forca - monstro.status.defesa);
+                monstro.status.vida = monstro.status.vida - (this.status.forca - monstro.status.defesa);
                 Console.WriteLine($"{this.nome} deu um ataque em {monstro.nome}, tirando {this.status.forca - monstro.status.defesa} de vida!");
             }
         }

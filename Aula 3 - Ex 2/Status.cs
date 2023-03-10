@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aula3Ex2
 {
-    internal class Status
+    public class Status
     {
         public int forca;
         public int defesa;

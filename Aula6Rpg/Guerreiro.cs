@@ -10,7 +10,7 @@ namespace Aula6Rpg
     {
         public void Atacar(Monstro monstro)
         {
-
+            monstro.Defender(monstro.status.defesa); 
         }
         public Guerreiro(string nome, Status status) : base(nome, status)
         {

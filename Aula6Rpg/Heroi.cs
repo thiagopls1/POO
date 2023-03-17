@@ -9,7 +9,7 @@ namespace Aula6Rpg
     public class Heroi
     {
         public string nome { get; private set; }
-        private Status status { get; set; }
+        protected Status status { get; set; }
 
         void Defender()
         {

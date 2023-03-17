@@ -8,7 +8,7 @@ namespace Aula6Rpg
 {
     public class Monstro
     {
-        public string nome;
+        public string nome { get; private set; }
         public Status status;
         public void Defender(int defesa)
         {

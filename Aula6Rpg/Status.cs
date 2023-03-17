@@ -8,10 +8,10 @@ namespace Aula6Rpg
 {
     public class Status
     {
-        public int forca;
-        public int defesa;
-        public int vida;
-        public int mana;
+        public int forca { get; private set; }
+        public int defesa { get; private set; }
+        public int vida { get; private set; }
+        public int mana { get; private set; }
         public Status(int forca, int defesa, int vida, int mana)
         {
             this.forca = forca;

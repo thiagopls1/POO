@@ -8,7 +8,7 @@ namespace Aula6Rpg
 {
     public class Guerreiro : Heroi
     {
-        public void Atacar()
+        public void Atacar(Monstro monstro)
         {
 
         }

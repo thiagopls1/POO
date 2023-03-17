@@ -10,7 +10,10 @@ namespace Aula6Rpg
     {
         public string nome;
         public Status status;
+        public void Defender(int defesa)
+        {
 
+        }
         public Monstro(string nome, Status status)
         {
             this.nome = nome;

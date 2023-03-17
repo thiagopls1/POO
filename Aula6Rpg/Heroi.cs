@@ -8,9 +8,13 @@ namespace Aula6Rpg
 {
     public class Heroi
     {
-        public string nome;
-        public Status status;
+        public string nome { get; private set; }
+        private Status status { get; set; }
 
+        void Defender()
+        {
+
+        }
         public Heroi(string nome, Status status) 
         {
             this.nome = nome;
